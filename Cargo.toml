@@ -1,5 +1,11 @@
 [workspace]
-members = ["packages/rusaint", "packages/rusaint-ffi", "uniffi-bindgen"]
+members = [
+    "packages/rusaint",
+    "packages/rusaint-cli",
+    "packages/rusaint-ffi",
+    "packages/rusaint-cli",
+    "uniffi-bindgen",
+]
 resolver = "2"
 
 [workspace.package]
