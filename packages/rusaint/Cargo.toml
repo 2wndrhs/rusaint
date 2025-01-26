@@ -31,7 +31,7 @@ reqwest = { version = "0.12.9", features = [
     "brotli",
 ], default-features = false }
 thiserror = { workspace = true }
-tokio = { workspace = true, features = ["sync"] }
+tokio = { workspace = true, features = ["full"] }
 html-escape = "0.2.13"
 url = "2.5.4"
 roxmltree = "0.20.0"
@@ -42,11 +42,12 @@ custom_debug_derive = "0.6.1"
 regex-lite = "0.1.6"
 log = { version = "0.4.22", features = ["kv"] }
 serde_json = "1.0.140"
+clap = { version = "4.5.27", features = ["derive"] }
+dotenv = "0.15.0"
 
 
 [dev-dependencies]
 anyhow = "1"
-dotenv = "0.15.0"
 futures = "0.3.30"
 tokio-test = "0.4.4"
 tokio = { workspace = true, features = ["macros", "test-util"] }
